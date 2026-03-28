@@ -59,7 +59,3 @@ SELECT * FROM Students WHERE Name LIKE 'J%';
 3. **Apps**: Search, filters (e.g., user names starting 'J')
 4. **Trade-offs**: +Storage, slower writes
 5. **Tips**: Index SELECT filters, use EXPLAIN, avoid over-indexing
-
-**Verify:** `EXPLAIN SELECT * FROM Students WHERE Name LIKE 'J%';`  
-**Cleanup:** `DROP INDEX idx_name ON Students;`
--
